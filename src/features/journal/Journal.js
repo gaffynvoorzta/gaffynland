@@ -31,7 +31,7 @@ const Journal = () => {
           <input
             type="text"
             className="journal-input"
-            placeholder="type some bollox here..."
+            placeholder="type summink..."
             value={newJournalEntry}
             onChange={(e) => {
               setNewJournalEntry(e.target.value);
