@@ -1,12 +1,9 @@
 const imgquery = [ "demons", "clowns", "pills", "vegetables", "worms", "riots" ];
 const rand = Math.floor(Math.random() * imgquery.length);
 const img = imgquery[rand];
-console.log(img);
 
 const unsplashKey = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
-console.log(unsplashKey);
 const API_URL = `https://api.unsplash.com/search/photos?query=${img}&page=1&per_page=5&client_id=${unsplashKey}`;
-console.log(API_URL);
 
 export const getImage = async () => {
   const response = await fetch(API_URL);
