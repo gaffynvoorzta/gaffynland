@@ -16,7 +16,7 @@ const Weather = () => {
     <div className="weather">
       <div className="temperature-container">
         <img
-          src={`http://openweathermap.org/img/wn/${metadata.icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${metadata.icon}@2x.png`}
           alt=""
         />
         <div className="weather-text">
