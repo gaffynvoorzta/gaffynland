@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getBackgroundImage } from "../backgroundImage/backgroundImageSlice";
 import { getQuote } from "../quote/quoteSlice";
 import { getWeather } from "../weather/weatherSlice";
+import { getFruit } from "../fruit/fruitSlice";
+import { getJoke } from "../joke/jokeSlice";
 
 export const errorSlice = createSlice({
   name: "errors",
@@ -27,6 +29,14 @@ export const errorSlice = createSlice({
     [getWeather.rejected]: (state) => {
       state.errorMessage = "Getting the weather failed.";
       state.retryHandler = getWeather;
+    },
+    [getFruit.rejected]: (state) => {
+      state.errorMessage = "Getting the fruit failed.";
+      state.retryHandler = getFruit;
+    },
+    [getJoke.rejected]: (state) => {
+      state.errorMessage = "Getting the joke failed.";
+      state.retryHandler = getJoke;
     }
   }
 });
