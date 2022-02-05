@@ -13,7 +13,7 @@ const API_URL3 = `https://fruityvice.com/api/fruit/${froot3}`;
 export const getFruit = async () => {
   const response = await fetch(API_URL);
   const json = await response.json();
-  console.log(json);
+  //console.log(json);
   const res2 = await fetch(API_URL2);
   const res3 = await fetch(API_URL3);
   const json2 = await res2.json();
