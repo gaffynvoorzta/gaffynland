@@ -30,28 +30,10 @@ function App() {
       <footer>
         <p>Work in Progress... Does this look like an inspirational homepage to you?</p>
         <p>Gaffyn Voorzta 2022... Refresh page to change stuff!</p>
-        <p>Thanks to....  Unsplash, FruityVice, OpenWeather, AxoltlApi, CatNinja, BoredApi...</p>
+        <p>Thanks to....  Unsplash, FruityVice, OpenWeather, AxoltlApi, CatFact, BoredApi...</p>
       </footer>
     </div>
   );
 }
-
-/*function App() {
-  return (
-    <div className="App">
-      <BackgroundImage />
-      <header>
-        <Error />
-        <Weather />
-      </header>
-      <main>
-        <Journal />
-      </main>
-      <footer>
-        <Quote />
-      </footer>
-    </div>
-  );
-}*/
 
 export default App;
