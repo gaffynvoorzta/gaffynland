@@ -11,11 +11,11 @@ const froot3 = fruits[randFruit3];
 const API_URL3 = `https://fruityvice.com/api/fruit/${froot3}`;
 
 export const getFruit = async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(API_URL, { mode: 'no-cors'} );
   const json = await response.json();
   //console.log(json);
-  const res2 = await fetch(API_URL2);
-  const res3 = await fetch(API_URL3);
+  const res2 = await fetch(API_URL2, { mode: 'no-cors'});
+  const res3 = await fetch(API_URL3, { mode: 'no-cors'});
   const json2 = await res2.json();
   const json3 = await res3.json();
   const fruit = json.name;

@@ -4,15 +4,15 @@ const API_URL3 = `https://catfact.ninja/fact`;
 
 
 export const getJoke = async () => {
-  const response = await fetch(API_URL, { mode: 'cors'});
+  const response = await fetch(API_URL, { mode: 'no-cors'});
   const json = await response.json();
   const activity = json.activity;
   //console.log(activity);
-  const response3 = await fetch(API_URL3, { mode: 'cors'});
+  const response3 = await fetch(API_URL3, { mode: 'no-cors'});
   const json3 = await response3.json();
   const joke = json3.fact;
   //console.log(json3);
-  const response2 = await fetch(API_URL2, { mode: 'cors'});
+  const response2 = await fetch(API_URL2, { mode: 'no-cors'});
   const json2 = await response2.json();
   var axoltl = json2.facts;
   if (Math.floor(Math.random() * 2) === 1) {
