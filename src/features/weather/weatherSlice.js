@@ -6,7 +6,7 @@ export const getWeather = createAsyncThunk(
   ({ city, country }) => openWeatherMapApi.getWeather(city, country)
 );
 
-const cities = [["Southend", "Uk"], ["Yakutsk", "Russia"], ["Timbuktu", "Mali"],
+const cities = [["London", "Uk"], ["Yakutsk", "Russia"], ["Timbuktu", "Mali"],
 ["Nuuk", "Greenland"], ["Hanga Roa", "Chile"], ["Medog", "China"], ["La Rinconada", "Peru"]];
 const randCity = Math.floor(Math.random() * cities.length);
 const randomCity = cities[randCity][0];
