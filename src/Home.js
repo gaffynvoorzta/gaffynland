@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from './Nav';
+//import Nav from './Nav';
 import BackgroundImage from "./features/backgroundImage/BackgroundImage";
 import Weather from "./features/weather/Weather";
 import Fruit from "./features/fruit/Fruit";
@@ -14,7 +14,6 @@ function Home() {
     <div className="App">
       <BackgroundImage />
       <header>
-        <Nav />
         <Error />
       </header>
       <aside className="left-wallpaper-control wallpaper-control">
