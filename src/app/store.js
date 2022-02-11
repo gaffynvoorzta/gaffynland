@@ -6,6 +6,8 @@ import weatherReducer from "../features/weather/weatherSlice";
 import errorReducer from "../features/error/errorSlice";
 import jokeReducer from "../features/joke/jokeSlice";
 import fruitReducer from "../features/fruit/fruitSlice";
+import catReducer from "../features/cat/catSlice";
+import dogReducer from "../features/dog/dogSlice";
 
 export default configureStore({
   reducer: {
@@ -15,6 +17,8 @@ export default configureStore({
     journal: journalReducer,
     error: errorReducer,
     joke: jokeReducer,
-    fruit: fruitReducer
+    fruit: fruitReducer,
+    cat: catReducer,
+    dog: dogReducer
   }
 });

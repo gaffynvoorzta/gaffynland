@@ -7,8 +7,26 @@ button {
   font-family: "Karla", sans-serif;
 }
 
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
 #background-image-container {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -25,6 +43,52 @@ button {
   filter: brightness(0.5) blur(1px) hue-rotate(90deg);
 }
 
+.header-text {
+  align-self: center;
+}
+
+#cat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.cat-icon {
+  object-fit: scale-down;
+  position: relative;
+  width: 75%;
+  min-height: 75%;
+  align-self: center;
+}
+
+.cat-icon:hover {
+  filter: brightness(150%) blur(5px);
+  transform: rotateX(720deg) rotateY(360deg);
+  transition: 10.0s ease-out;
+}
+
+#dog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.dog-icon {
+  object-fit: scale-down;
+  position: relative;
+  width: 100%;
+  min-height: 75%;
+  align-self: center;
+}
+
+.dog-icon:hover {
+  filter: hue-rotate(10000deg);
+  transform: rotateY(3600deg);
+  transition: 10.0s ease-out;
+}
+
 body {
   color: white;
 }
@@ -37,12 +101,15 @@ body {
 .temperature-container {
   display: flex;
   padding-right: 40px;
+  align-items: flex-end;
 }
 
 .weather {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  position: relative;
+  flex-direction: row;
+  align-self: flex-end;
+  padding-bottom: 24px;
 }
 
 .weather p {
@@ -59,10 +126,17 @@ body {
   margin-left: -6px;
 }
 
+.weather-icon:hover {
+  transform: rotateX(-7200deg) rotateY(-3600deg);
+  transition: 10.0s ease-in;
+  cursor: pointer;
+}
+
 #fruit {
   text-align: center;
   margin-top: 1px;
   margin-bottom: 1px;
+  align-self: center;
 }
 
 .fruit-name {
@@ -126,15 +200,15 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "Header Header Header"
-    "Main Main Main"
-    "Footer Footer Footer";
+    "Header"
+    "Main"
+    "Footer";
   height: 100vh;
-  overflow: auto;
+  overflow: visible;
 }
 
 header {
@@ -145,6 +219,7 @@ header {
 main {
   grid-area: Main;
   display: flex;
+  position: initial;
   flex-direction: column;
   padding-top: 32px;
   padding-left: 32px;
@@ -330,15 +405,16 @@ p {
 .left-wallpaper-control {
   grid-row-start: 2;
   grid-column-start: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: flex-start;
   margin-left: 16px;
 }
 
 .right-wallpaper-control {
   grid-row-start: 2;
   grid-column-start: 3;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 16px;

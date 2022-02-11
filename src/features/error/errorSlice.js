@@ -4,6 +4,7 @@ import { getQuote } from "../quote/quoteSlice";
 import { getWeather } from "../weather/weatherSlice";
 import { getFruit } from "../fruit/fruitSlice";
 import { getJoke } from "../joke/jokeSlice";
+import { getCat } from "../cat/catSlice";
 
 export const errorSlice = createSlice({
   name: "errors",
@@ -37,6 +38,10 @@ export const errorSlice = createSlice({
     [getJoke.rejected]: (state) => {
       state.errorMessage = "Getting the joke failed.";
       state.retryHandler = getJoke;
+    },
+    [getCat.rejected]: (state) => {
+      state.errorMessage = "Getting the cat failed.";
+      state.retryHandler = getCat;
     }
   }
 });

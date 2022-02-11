@@ -24,7 +24,7 @@ const JournalEntry = ({ children, id, isDone }) => {
           }}
         >
           {isDone ? "Redo" : "Done"}
-          <Confetti active={isDone} config={{ spread: 360 }} />
+          <Confetti active={isDone} config={{ spread: 180 }} />
         </button>
       </div>
       {children}
