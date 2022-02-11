@@ -32,7 +32,7 @@ function Home() {
       <footer>
         <p>Work in Progress... Does this look like an inspirational homepage to you?</p>
         <p>Gaffyn Voorzta 2022... Refresh page to change stuff!</p>
-        <p>Thanks to....  Unsplash, FruityVice, OpenWeather, AxoltlApi, CatFact, BoredApi...</p>
+        <p>Thanks to....  Unsplash, FruityVice, OpenWeather, AxoltlApi, CatFact, BoredApi, DogApi, CatApi...</p>
       </footer>
     </div>
   );
