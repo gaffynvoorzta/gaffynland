@@ -102,7 +102,7 @@ nav {
 .dog-icon:hover {
   filter: hue-rotate(10000deg);
   transform: rotateY(3600deg);
-  transition: 10.0s ease-out;
+  transition: 20.0s ease-in-out;
   cursor: pointer;
 }
 
