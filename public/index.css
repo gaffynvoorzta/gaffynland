@@ -25,6 +25,11 @@ nav {
   list-style: none;
 }
 
+.nav-title:hover {
+  transition: 10s ease-in;  
+  transform: rotateY(1800deg);
+}
+
 #background-image-container {
   position: fixed;
   width: 100vw;
@@ -45,6 +50,16 @@ nav {
 
 .header-text {
   align-self: center;
+  background-color: darkmagenta;
+  border-radius: 0%;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.header-text:hover {
+  border-radius: 30%;
+  background-color:darkturquoise;
+  transform: rotateX(3600deg);
 }
 
 #cat {
@@ -98,6 +113,14 @@ body {
 .temperature {
   font-size: 32px;
   padding-top: 12px;
+  transition-property: all;
+  transition-duration: 10s;
+}
+
+.temperature:hover {
+  font-size: 40px;
+  padding: 24px;
+  color:chartreuse;
 }
 
 .temperature-container {
@@ -121,6 +144,12 @@ body {
 .weather-description {
   text-transform: uppercase;
   font-size: 13px;
+  transition-property: all;
+  transition-duration: 10s;
+}
+
+.weather-description:hover {
+  font-size: 26px;
 }
 
 .weather-text {
@@ -145,12 +174,32 @@ body {
   font-family: 'Bangers', cursive;
   font-size:20px;
   font-weight: bold;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.fruit-name:hover {
+  font-weight: bolder;
+  padding: 10%;
+  background-color:gold;
+  color:indianred;
 }
 
 .axolotl {
   font-family: 'Indie flower', cursive;
   font-size:20px;
   font-weight: bold;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
+.axolotl:hover {
+  padding: 10%;
+  color:mediumvioletred;
+  background-color:lightblue;
+  transform: translateX(-10px) translateY(-10px);
+  font-size: 24px;
+  border-radius: 100%;
 }
 
 #quote {
@@ -173,8 +222,21 @@ body {
   margin-bottom: 4px;
   font-style: oblique;
   font-family: fantasy;
-  font-size:large;
+  font-size: 20px;
   font-weight: bold;
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.quote-joke:hover {
+  /*font-size: 40px;*/
+  color:rgb(225, 238, 151);
+  background-color:chartreuse;
+  transform: rotateX(360deg) rotateY(180deg) skew(10deg) scale(1000%);
+}
+
+.quote-joke:after {
+  transform: rotateY(1800deg);
 }
 
 #error-message-container {
