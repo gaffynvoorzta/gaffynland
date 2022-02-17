@@ -35,6 +35,8 @@ nav {
 .nav-title:hover {
   transition: 10s ease-in;  
   transform: rotateY(1800deg);
+  background-color: purple;
+  color:yellow;
 }
 
 #background-image-container {

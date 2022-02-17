@@ -13,7 +13,9 @@ fruit3, genus3, family3 } = useSelector((state) => state.fruit);
 
   return (
     <div id="fruit">
-      <h3> Rewardless Latin Fruit Machine </h3>
+      <h3> <abbr title="the prize is winning itself... (anyone else think they sound like
+        Harry Potter spells when you read out the middle line?)">
+        Rewardless Latin Fruit Machine</abbr> </h3>
       <p className="fruit-name">“{fruit} {fruit2} {fruit3}”</p>
       <p className="fruit-name">“{genus} {genus2} {genus3}”</p>
       <p className="fruit-name">“{family} {family2} {family3}”</p>
