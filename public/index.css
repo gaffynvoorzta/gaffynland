@@ -25,11 +25,11 @@ nav {
   list-style: none;
 }
 
-.nav-links a:hover, .nav-links a:focus {
+.nav-links a:hover, .nav-links a:focus, .nav-links a:active {
   transition: 2s ease-in-out;
   background-color:rgb(160, 204, 85);
   font-size: 1.5em;
-  transform: skew(30deg);
+  transform: skew(20deg);
 }
 
 .nav-title:hover {
@@ -108,9 +108,10 @@ nav {
 
 .dog-icon:hover {
   filter: hue-rotate(10000deg);
-  transform: rotateY(3600deg);
+  transform: rotateY(3780deg);
   transition: 20.0s ease-in-out;
   cursor: pointer;
+  border-radius: 100%;
 }
 
 body {
