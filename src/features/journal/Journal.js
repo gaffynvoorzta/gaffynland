@@ -23,8 +23,9 @@ const Journal = () => {
     <>
       <div id="journal" className="surface">
         <h2>ToDo List Simulator</h2>
-        <h5>immerse yourself in this realistic ToDo List simulator, simply type stuff below
-          and watch the magic happen!
+        <h5>immerse yourself in this <abbr title="A VR version of this app is being planned...">
+        realistic ToDo List simulator</abbr>, simply type stuff below
+          and watch the <abbr title="well kinda...">magic</abbr> happen!
         </h5>
 
         <form onSubmit={onFormSubmit}>

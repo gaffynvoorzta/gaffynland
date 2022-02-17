@@ -25,6 +25,13 @@ nav {
   list-style: none;
 }
 
+.nav-links a:hover, .nav-links a:focus {
+  transition: 2s ease-in-out;
+  background-color:rgb(160, 204, 85);
+  font-size: 1.5em;
+  transform: skew(30deg);
+}
+
 .nav-title:hover {
   transition: 10s ease-in;  
   transform: rotateY(1800deg);
@@ -79,7 +86,7 @@ nav {
 
 .cat-icon:hover {
   filter: brightness(150%) blur(5px);
-  transform: rotateX(720deg) rotateY(360deg);
+  transform: rotateX(720deg) rotateY(360deg) skew(30deg);
   transition: 10.0s ease-out;
   cursor: pointer;
 }
