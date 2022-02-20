@@ -7,12 +7,14 @@ export const jokeSlice = createSlice({
   name: "joke",
   initialState: {
     activity: "",
-    axoltl: ""
+    axoltl: "",
+    blogapi: ""
   },
   extraReducers: {
     [getJoke.fulfilled]: (state, action) => {
       state.activity = action.payload.activity;
       state.axoltl = action.payload.axoltl;
+      state.blogapi = action.payload.blogapi;
     }
   }
 });

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getJoke } from "./jokeSlice";
 
 const Joke = () => {
-  const { activity, axoltl } = useSelector((state) => state.joke);
+  const { activity, axoltl, blogapi } = useSelector((state) => state.joke);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,6 +21,11 @@ const Joke = () => {
       <p></p>
       <h3> <abbr title="CaxtaFactolotl...">Cat or maybe Axolotl Factinator</abbr></h3>
       <p className="axolotl"> {axoltl}</p>
+      <p></p>
+      <h3> <abbr title="Will return better objects in time...">
+        GaffynBlog API</abbr>
+      </h3>
+      <p className="blogapi">{blogapi}</p>
     </div>
   );
 };

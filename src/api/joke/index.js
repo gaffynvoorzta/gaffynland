@@ -1,7 +1,7 @@
 const API_URL = `https://calm-ravine-80567.herokuapp.com/https://www.boredapi.com/api/activity`;
 const API_URL2 = `https://calm-ravine-80567.herokuapp.com/https://axoltlapi.herokuapp.com/`;
 const API_URL3 = `https://calm-ravine-80567.herokuapp.com/https://catfact.ninja/fact`;
-
+const API_URL4 = `https://calm-ravine-80567.herokuapp.com/https://gaffynblog.netlify.app/api/hello`;
 
 export const getJoke = async () => {
   const response = await fetch(API_URL);
@@ -19,10 +19,15 @@ export const getJoke = async () => {
     axoltl = json3.fact;
   }
   //console.log(axoltl);
+  const response4 = await fetch(API_URL4);
+  const json4 = await response4.json();
+  const blogapi = json4.text;
+
   return {
     joke: joke,
     axoltl: axoltl,
-    activity: activity  
+    activity: activity,
+    blogapi: blogapi  
   };
 };
 const jokeApi = {

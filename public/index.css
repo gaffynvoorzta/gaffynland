@@ -204,6 +204,14 @@ body {
   transition-duration: 3s;
 }
 
+.blogapi {
+  padding: 5%;
+  font-size: 20px;
+  border: 1px;
+  transition-property: all;
+  transition-duration: 3s;
+}
+
 .axolotl:hover {
   padding: 10%;
   color:mediumvioletred;
@@ -212,6 +220,12 @@ body {
   font-size: 24px;
   border: 3px dashed;
   border-radius: 100%;
+}
+
+.blogapi:hover {
+  padding: 20%;
+  font-size: 4em;
+  border: 5px dotted;
 }
 
 #quote {
