@@ -1,4 +1,4 @@
-const imgquery = [ "demons", "clowns", "pills", "vegetables", "worms", "riots" ];
+const imgquery = [ "demons", "clowns", "vegetables", "worms", "riots" ];
 const rand = Math.floor(Math.random() * imgquery.length);
 const img = imgquery[rand];
 
