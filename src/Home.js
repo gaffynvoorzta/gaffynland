@@ -8,6 +8,8 @@ import Journal from "./features/journal/Journal";
 import BackgroundImageLeftControl from "./features/backgroundImage/components/BackgroundImageLeftControl";
 import BackgroundImageRightControl from "./features/backgroundImage/components/BackgroundImageRightControl";
 import Joke from "./features/joke/Joke";
+//import Bored from "./features/bored/Bored";
+//import GaffynBlog from "./features/gaffynBlog/GaffynBlog";
 
 function Home() {
   return (
