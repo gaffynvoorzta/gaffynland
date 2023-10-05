@@ -1,7 +1,7 @@
-const API_URL = `https://calm-ravine-80567.herokuapp.com/https://www.boredapi.com/api/activity`;
+const API_URL = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://www.boredapi.com/api/activity`;
 //const API_URL2 = `https://calm-ravine-80567.herokuapp.com/https://theaxolotlapi.netlify.app/`;
-const API_URL3 = `https://calm-ravine-80567.herokuapp.com/https://catfact.ninja/fact`;
-const API_URL4 = `https://calm-ravine-80567.herokuapp.com/https://gaffynblog.netlify.app/api/hello`;
+const API_URL3 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://catfact.ninja/fact`;
+const API_URL4 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://gaffynblog.netlify.app/api/hello`;
 
 export const getJoke = async () => {
   const response = await fetch(API_URL);
