@@ -1,4 +1,4 @@
-const API_URL = `https://calm-ravine-80567.herokuapp.com/https://www.boredapi.com/api/activity`;
+const API_URL = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://www.boredapi.com/api/activity`;
 
 export const getBored = async () => {
   const response = await fetch(API_URL);
