@@ -84,12 +84,12 @@ nav {
   width: 75%;
   min-height: 75%;
   align-self: center;
+  transition: 10.0s ease-in-out;
 }
 
 .cat-icon:hover {
   filter: brightness(150%) blur(5px);
   transform: rotateX(720deg) rotateY(360deg) skew(30deg);
-  transition: 10.0s ease-out;
   cursor: pointer;
 }
 
@@ -106,12 +106,12 @@ nav {
   width: 100%;
   min-height: 75%;
   align-self: center;
+  transition: 10.0s ease-in-out;
 }
 
 .dog-icon:hover {
   filter: hue-rotate(10000deg);
   transform: rotateY(3780deg);
-  transition: 20.0s ease-in-out;
   cursor: pointer;
   border-radius: 100%;
 }
