@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "/cors-proxy/*"
-  to = ":splat"
+  from = "/*"
+  to = "/"
   status = 200
-  force = true
