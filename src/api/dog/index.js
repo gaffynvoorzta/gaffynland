@@ -1,4 +1,5 @@
-const API_URL=`https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://dog.ceo/api/breeds/image/random`;
+//const API_URL=`https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://dog.ceo/api/breeds/image/random`;
+const API_URL=`/cors-proxy/https://dog.ceo/api/breeds/image/random`;
 
 export const getDog = async () => {
   const response = await fetch(API_URL);
