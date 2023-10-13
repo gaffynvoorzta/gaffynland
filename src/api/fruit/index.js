@@ -4,11 +4,14 @@ const randFruit = Math.floor(Math.random() * fruits.length);
 const randFruit2 = Math.floor(Math.random() * fruits.length);
 const randFruit3 = Math.floor(Math.random() * fruits.length);
 const froot = fruits[randFruit];
-const API_URL = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot}`;
+//const API_URL = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot}`;
+const API_URL = `/cors-proxy/https://fruityvice.com/api/fruit/${froot}`;
 const froot2 = fruits[randFruit2];
-const API_URL2 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot2}`;
+//const API_URL2 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot2}`;
+const API_URL2 = `/cors-proxy/https://fruityvice.com/api/fruit/${froot2}`;
 const froot3 = fruits[randFruit3];
-const API_URL3 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot3}`;
+//const API_URL3 = `https://immense-dusk-80893-7d5edccb4ae5.herokuapp.com/https://fruityvice.com/api/fruit/${froot3}`;
+const API_URL3 = `/cors-proxy/https://fruityvice.com/api/fruit/${froot3}`;
 
 export const getFruit = async () => {
   const response = await fetch(API_URL);
